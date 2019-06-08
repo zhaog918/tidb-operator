@@ -8,7 +8,7 @@ questions:
   group: "容器镜像"
   subquestions:
   - variable: discovery.image
-    default: "pingcap/tidb-operator:v1.0.0-beta.2"
+    default: "pingcap/tidb-operator:v1.0.0-beta.3"
     description: "Discovery组件镜像"
     type: string
     label: Discovery镜像名称
