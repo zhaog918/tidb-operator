@@ -1,0 +1,29 @@
+questions:
+- variable: defaultImage
+  default: true
+  description: "使用默认Docker镜像"
+  label: 使用默认镜像
+  type: boolean
+  show_subquestion_if: false
+  group: "容器镜像"
+  subquestions:
+  - variable: discovery.image
+    default: "pingcap/tidb-operator:v1.0.0-beta.2"
+    description: "Discovery组件镜像"
+    type: string
+    label: Discovery镜像名称
+  - variable: pd.image
+    default: "pingcap/pd:v3.0.0-rc.1"
+    description: "PD组件镜像名称"
+    type: string
+    label: PD镜像名称
+  - variable: tikv.image
+    default: "pingcap/tikv:v3.0.0-rc.1"
+    description: "tikv组件镜像名称"
+    type: string
+    label: tikv镜像名称
+  - variable: tidb.image
+    default: "pingcap/tidb:v3.0.0-rc.1"
+    description: "tidb组件镜像名称"
+    type: string
+    label: tidb镜像名称
